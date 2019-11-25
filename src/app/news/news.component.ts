@@ -17,6 +17,8 @@ import { Story } from '../stories';
 export class NewsComponent implements OnInit {
   topStories: Story[];
   today: number = Date.now();
+  thisHour: number;
+  unixHour: number;
 
   constructor(private storiesService: StoriesService) { }
 

@@ -1,4 +1,5 @@
-<table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+<body>
+<table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef" align="center">
         <tr>
             <td bgcolor="#ff6600">
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px">
@@ -21,7 +22,7 @@
         </tr>
         <tr>
             <td>
-                <table border="0" cellpadding="0" cellspacing="0" class="itemlist" *ngFor="let story of topStories; let index = index;" ng-app='hackerNews' ng-controller="myCtrl">
+                <table border="0" cellpadding="0" cellspacing="0" class="itemlist" *ngFor="let story of topStories; let index = index;">
                     <tr class='athing' id='{{ story.id }}'>
                         <td align="right" valign="top" class="title">
                             <span class="rank">{{ index + 1 }}</span>
@@ -40,7 +41,7 @@
                         <td colspan="2"></td>
                         <td class="subtext">
                         <span class="score" id="score_{{ story.id }}">{{ story.score }} points</span> by <a href="user?id={{ story.by.id }}" class="hnuser"> {{ story.by.id }} </a>
-                        <span class="age"><a href="item?id={{ story.id }}">{{ (story.timeISO | date: 'H') }} hours ago </a></span>
+                        <span class="age"><a href="item?id={{ story.id }}">{{ story.timeISO | date: 'H' }} hours ago </a></span>
                         <span id="unv_{{ story.id }}"></span> | <a href="hide?id={{ story.id }}&amp;goto=news">hide</a> | <a href="item?id={{ story.id }}">{{ story.descendants }}&nbsp;comments</a>
                         </td>
                     </tr>
@@ -53,7 +54,7 @@
                     </tr>
             </td>
         </tr>
-          <tr>
+          <tr align="center">
             <td><img src="https://news.ycombinator.com/s.gif" height="10" width="0">
               <table width="100%" cellspacing="0" cellpadding="1">
                 <tr><td bgcolor="#ff6600"></td>
@@ -78,15 +79,4 @@
             </td>
           </tr>
 </table>
-
-
-  <script type="text/javascript">
-
-     var app = angular.module('hackerNews', []);
-
-     app.controller('myCtrl', ['$scope', '$http', function ($scope, $http) {
-        $scope.thisHour = new Date().getHours();
-        console.log(thisHour);
-     }]);
-
-  </script>
+</body>

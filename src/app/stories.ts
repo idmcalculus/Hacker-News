@@ -4,10 +4,12 @@ export class Story {
   url: string;
   score: number;
   descendants: number;
+  time: number;
   timeISO: string;
   by: By;
   today: number;
   thisHour: number;
+  unixHour: number;
 }
 
 

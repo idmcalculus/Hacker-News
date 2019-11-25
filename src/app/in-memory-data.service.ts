@@ -8,333 +8,363 @@ export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const stories = [
       {
-        id: '21606415',
-        title: '1.2B people exposed in data leak includes personal info, LinkedIn, Facebook',
-        url: 'https://www.dataviper.io/blog/2019/pdl-data-exposure-billion-people/',
-        score: 624,
-        descendants: 173,
-        timeISO: '2019-11-22T15:31:22.000Z',
+        id: '21618774',
+        title: 'CUDA 10.2 is the last release to support macOS',
+        url: 'https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html',
+        score: 22,
+        descendants: 10,
+        time: 1574576664,
+        timeISO: '2019-11-24T06:24:24.000Z',
         by: {
-          id: 'bencollier49'
+          id: 'sergiomattei'
         }
       },
       {
-        id: '21607734',
-        title: 'The revolution of machine learning has been greatly exaggerated',
-        url: 'http://nautil.us/issue/78/atmospheres/are-neural-networks-about-to-reinvent-physics',
-        score: 78,
-        descendants: 29,
-        timeISO: '2019-11-22T17:28:05.000Z',
+        id: '21618079',
+        title: 'Hard Problems in Cryptocurrency: Five Years Later',
+        url: 'https://vitalik.ca/general/2019/11/22/progress.html',
+        score: 113,
+        descendants: 63,
+        time: 1574564592,
+        timeISO: '2019-11-24T03:03:12.000Z',
         by: {
-          id: 'benryon'
+          id: 'feross'
         }
       },
       {
-        id: '21607712',
-        title: 'Postwoman – a free, fast, and beautiful alternative to Postman',
-        url: 'https://github.com/liyasthomas/postwoman',
-        score: 93,
-        descendants: 41,
-        timeISO: '2019-11-22T17:26:44.000Z',
+        id: '21618373',
+        title: 'The Web Began Dying in 2014 (2017)',
+        url: 'https://staltz.com/the-web-began-dying-in-2014-heres-how.html',
+        score: 34,
+        descendants: 8,
+        time: 1574570141,
+        timeISO: '2019-11-24T04:35:41.000Z',
         by: {
-          id: 'michaelsbradley'
+          id: 'pcr910303'
         }
       },
       {
-        id: '21598815',
-        title: 'Google Kills Cloud Print',
-        url: 'https://support.google.com/chrome/a/answer/9633006',
-        score: 100,
-        descendants: 383,
-        timeISO: '2019-11-21T19:58:44.000Z',
+        id: '21618083',
+        title: 'Japanese hotel room costs $1 a night, but you have to livestream your stay',
+        url: 'https://edition.cnn.com/travel/article/livestream-hotel-room-japan-intl-hnk/index.html',
+        score: 59,
+        descendants: 14,
+        time: 1574564676,
+        timeISO: '2019-11-24T03:04:36.000Z',
         by: {
-          id: 'ryandvm'
+          id: 'herendin2'
         }
       },
       {
-        id: '21606221',
-        title: 'Overview of Rust error handling libraries',
-        url: 'https://blog.yoshuawuyts.com/error-handling-survey/',
-        score: 105,
-        descendants: 43,
-        timeISO: '2019-11-22T15:12:41.000Z',
+        id: '21617016',
+        title: 'Show HN: Hacker News Title Edit Tracker',
+        url: 'https://hackernewstitles.netlify.com/',
+        score: 237,
+        descendants: 50,
+        time: 1574547751,
+        timeISO: '2019-11-23T22:22:31.000Z',
         by: {
-          id: 'agluszak'
+          id: 'petercooper'
         }
       },
       {
-        id: '21605643',
-        title: 'The difference between an expert’s brain and a novice’s',
-        url: 'https://www.cshl.edu/the-difference-between-an-experts-brain-and-a-novices/',
-        score: 155,
-        descendants: 40,
-        timeISO: '2019-11-22T14:08:40.000Z',
-        by: {
-          id: 'known'
-        }
-      },
-      {
-        id: '21605470',
-        title: 'Deepfakes: MIT brings Nixon\'s Apollo disaster speech to life',
-        url: 'https://www.wbur.org/news/2019/11/22/mit-nixon-deep-fake',
-        score: 135,
-        descendants: 81,
-        timeISO: '2019-11-22T13:47:14.000Z',
-        by: {
-          id: 'jbredeche'
-        }
-      },
-      {
-        id: '21608094',
-        title: 'New Tricks for an Old Z-Machine, Part 3: A Renaissance Is Nigh',
-        url: 'https://www.filfre.net/2019/11/new-tricks-for-an-old-z-machine-part-3-a-renaissance-is-nigh/',
-        score: 11,
-        descendants: 0,
-        timeISO: '2019-11-22T17:58:00.000Z',
-        by: {
-          id: 'doppp'
-        }
-      },
-      {
-        id: '21601932',
-        title: 'DeepMind\'s MuZero teaches itself how to win at Atari, chess, shogi, and Go',
-        url: 'https://venturebeat.com/2019/11/20/deepminds-muzero-teaches-itself-how-to-win-at-atari-chess-shogi-and-go/',
-        score: 41,
-        descendants: 9,
-        timeISO: '2019-11-22T02:32:18.000Z',
-        by: {
-          id: 'jonbaer'
-        }
-      },
-      {
-        id: '21607564',
-        title: 'Google Translator Toolkit is shutting down',
-        url: 'https://support.google.com/translatortoolkit/answer/9462068?hl=en',
-        score: 21,
-        descendants: 6,
-        timeISO: '2019-11-22T17:12:45.000Z',
-        by: {
-          id: 'amq'
-        }
-      },
-      {
-        id: '21593498',
-        title: 'Rust compiler bug test case reduction techniques',
-        url: 'http://blog.pnkfx.org/blog/2019/11/18/rust-bug-minimization-patterns/',
-        score: 44,
-        descendants: 1,
-        timeISO: '2019-11-21T12:43:04.000Z',
-        by: {
-          id: 'fanf2'
-        }
-      },
-      {
-        id: '21592970',
-        title: 'Designing Windows 95\'s User Interface',
-        url: 'https://socket3.wordpress.com/2018/02/03/designing-windows-95s-user-interface/',
-        score: 161,
-        descendants: 71,
-        timeISO: '2019-11-21T10:52:54.000Z',
-        by: {
-          id: 'akling'
-        }
-      },
-      {
-        id: '21604544',
-        title: 'We Tested 5 Popular Web Hosting Companies and All Were Easily Hacked',
-        url: 'https://www.websiteplanet.com/blog/report-popular-hosting-hacked/',
-        score: 120,
-        descendants: 22,
-        timeISO: '2019-11-22T11:07:15.000Z',
-        by: {
-          id: 'jcassee'
-        }
-      },
-      {
-        id: '21602437',
-        title: 'Tesla Cybertruck',
-        url: 'https://www.tesla.com/cybertruck',
-        score: 1627,
-        descendants: 1648,
-        timeISO: '2019-11-22T04:30:23.000Z',
-        by: {
-          id: 'sahin-boydas'
-        }
-      },
-      {
-        id: '21608205',
-        title: '‘We were sold off’: WeWork’s staff face uncertain future as company collapses',
-        url: 'https://www.theguardian.com/business/2019/nov/22/we-were-sold-off-weworks-support-staff-face-uncertain-future-as-company-collapses',
-        score: 40,
-        descendants: 19,
-        timeISO: '2019-11-22T18:09:10.000Z',
-        by: {
-          id: 'vanusa'
-        }
-      },
-      {
-        id: '21593257',
-        title: 'Common Mistakes and Missed Optimization Opportunities in SQL',
-        url: 'https://hakibenita.com/sql-dos-and-donts',
-        score: 131,
-        descendants: 56,
-        timeISO: '2019-11-21T11:59:14.000Z',
-        by: {
-          id: 'haki'
-        }
-      },
-      {
-        id: '21593446',
-        title: 'Neural Network on a Commodore 64 (1987)',
-        url: 'http://www.fourmilab.ch/documents/commodore/BrainSim/',
-        score: 18,
-        descendants: 2,
-        timeISO: '2019-11-21T12:33:17.000Z',
-        by: {
-          id: 'musha68k'
-        }
-      },
-      {
-        id: '21606642',
-        title: 'Sacha Baron Cohen\'s Thoughts on Social Media and Tech Company Responsibilities',
-        url: 'https://www.youtube.com/watch?v=ymaWq5yZIYM',
-        score: 189,
-        descendants: 109,
-        timeISO: '2019-11-22T15:50:43.000Z',
-        by: {
-          id: 'ajg360'
-        }
-      },
-      {
-        id: '21606329',
-        title: 'Scientists Confirm Water Vapor on Europa',
-        url: 'http://www.nasa.gov/feature/goddard/2019/nasa-scientists-confirm-water-vapor-on-europa',
-        score: 112,
-        descendants: 19,
-        timeISO: '2019-11-22T15:24:14.000Z',
-        by: {
-          id: 'l1n'
-        }
-      },
-      {
-        id: '21593147',
-        title: 'Using SDRAM in FPGA Designs',
-        url: 'https://www.joshbassett.info/sdram-controller/',
-        score: 9,
-        descendants: 1,
-        timeISO: '2019-11-21T11:36:26.000Z',
-        by: {
-          id: 'nullobject'
-        }
-      },
-      {
-        id: '21604685',
-        title: 'Mu: Sketching out a minimal system programming language',
-        url: 'http://akkartik.name/post/mu-2019-2',
-        score: 75,
-        descendants: 12,
-        timeISO: '2019-11-22T11:37:05.000Z',
-        by: {
-          id: 'signa11'
-        }
-      },
-      {
-        id: '21608320',
-        title: 'Show HN: Wrapping Images Around Fractals',
-        url: 'http://bamia.net/articles/fractals/index.html',
-        score: 3,
-        descendants: 1,
-        timeISO: '2019-11-22T18:20:48.000Z',
-        by: {
-          id: 'bamia'
-        }
-      },
-      {
-        id: '21605165',
-        title: 'Milled: A search engine for email newsletters',
-        url: 'https://milled.com/',
-        score: 40,
-        descendants: 20,
-        timeISO: '2019-11-22T13:04:19.000Z',
-        by: {
-          id: 'mrzool'
-        }
-      },
-      {
-        id: '21605190',
-        title: 'Bee-Friendly Companies Are Getting the Science of the Crisis Completely Wrong',
-        url: 'https://onezero.medium.com/bee-friendly-companies-are-getting-the-science-of-the-crisis-completely-wrong-c48055460337?source=rss----444d13b52878---4&gi=3d2b75823b0f',
-        score: 36,
-        descendants: 22,
-        timeISO: '2019-11-22T13:07:20.000Z',
-        by: {
-          id: 'wixxy'
-        }
-      },
-      {
-        id: '21593602',
-        title: 'Our home delivery habit reshaped the world',
-        url: 'https://www.theguardian.com/technology/2019/nov/21/how-our-home-delivery-habit-reshaped-the-world',
-        score: 28,
-        descendants: 28,
-        timeISO: '2019-11-21T13:03:38.000Z',
-        by: {
-          id: 'opaque'
-        }
-      },
-      {
-        id: '21605719',
-        title: 'Cloudflare open-sources Flan Scan, a network vulnerability scanner',
-        url: 'https://blog.cloudflare.com/introducing-flan-scan/',
-        score: 121,
-        descendants: 31,
-        timeISO: '2019-11-22T14:19:12.000Z',
-        by: {
-          id: '0xmohit'
-        }
-      },
-      {
-        id: '21604710',
-        title: 'The Danger of “Simplicity”',
-        url: 'https://asthasr.github.io/posts/danger-of-simplicity',
-        score: 223,
-        descendants: 143,
-        timeISO: '2019-11-22T11:41:31.000Z',
-        by: {
-          id: 'emrehan'
-        }
-      },
-      {
-        id: '21603483',
-        title: 'Go’s Features of Last Resort',
-        url: 'https://www.arp242.net/go-last-resort.html',
+        id: '21617643',
+        title: 'Jslinux (2018)',
+        url: 'https://bellard.org/jslinux/',
         score: 96,
-        descendants: 42,
-        timeISO: '2019-11-22T07:08:28.000Z',
+        descendants: 14,
+        time: 1574557020,
+        timeISO: '2019-11-24T00:57:00.000Z',
         by: {
-          id: 'kristianp'
+          id: 'pmoriarty'
         }
       },
       {
-        id: '21607598',
-        title: 'Sacha Baron Cohen: Facebook would have let Hitler buy ads for \'final solution\'',
-        url: 'https://www.msn.com/en-gb/entertainment/movies/sacha-baron-cohen-facebook-would-have-let-hitler-buy-ads-for-final-solution/ar-BBXaK3S',
-        score: 360,
-        descendants: 157,
-        timeISO: '2019-11-22T17:15:38.000Z',
+        id: '21613357',
+        title: 'The Bus Ticket Theory of Genius',
+        url: 'http://paulgraham.com/genius.html',
+        score: 828,
+        descendants: 395,
+        time: 1574503593,
+        timeISO: '2019-11-23T10:06:33.000Z',
         by: {
-          id: 'yevster'
+          id: 'pilingual'
         }
       },
       {
-        id: '21606154',
-        title: 'Standard Cyborg is hiring back end engineers to work on computer vision tools',
-        url: 'https://www.standardcyborg.com/careers/backend-engineer',
-        score: 1,
-        descendants: null,
-        timeISO: '2019-11-22T15:06:20.000Z',
+        id: '21616933',
+        title: 'Suspect can’t be compelled to reveal “64-character” password, court rules',
+        url: 'https://arstechnica.com/tech-policy/2019/11/police-cant-force-child-porn-suspect-to-reveal-his-password-court-rules/',
+        score: 93,
+        descendants: 45,
+        time: 1574546902,
+        timeISO: '2019-11-23T22:08:22.000Z',
         by: {
-          id: 'jeffchuber'
+          id: 'sxp'
+        }
+      },
+      {
+        id: '21618346',
+        title: 'Cryptoqueen: A woman scammed the world, then vanished',
+        url: 'https://www.bbc.co.uk/news/stories-50435014',
+        score: 14,
+        descendants: 2,
+        time: 1574569626,
+        timeISO: '2019-11-24T04:27:06.000Z',
+        by: {
+          id: 'lnguyen'
+        }
+      },
+      {
+        id: '21604627',
+        title: 'The Hidden Life of an Amazon User',
+        url: 'https://www.janavirgin.com/AMZ/',
+        score: 9,
+        descendants: 0,
+        time: 1574421786,
+        timeISO: '2019-11-22T11:23:06.000Z',
+        by: {
+          id: 'rudenoise'
+        }
+      },
+      {
+        id: '21615924',
+        title: 'An 84-year-old Japanese app developer',
+        url: 'https://asia.nikkei.com/Business/Technology/Meet-the-84-year-old-Japanese-app-developer-who-inspired-Tim-Cook2',
+        score: 190,
+        descendants: 49,
+        time: 1574536907,
+        timeISO: '2019-11-23T19:21:47.000Z',
+        by: {
+          id: 'raleighm'
+        }
+      },
+      {
+        id: '21616084',
+        title: 'X17 Particle',
+        url: 'https://en.wikipedia.org/wiki/X17_particle',
+        score: 126,
+        descendants: 41,
+        time: 1574538493,
+        timeISO: '2019-11-23T19:48:13.000Z',
+        by: {
+          id: 'miobrien'
+        }
+      },
+      {
+        id: '21610207',
+        title: 'Loving Latin at the End of the World',
+        url: 'http://bostonreview.net/politics/joel-christensen-loving-latin-end-world',
+        score: 12,
+        descendants: 2,
+        time: 1574457682,
+        timeISO: '2019-11-22T21:21:22.000Z',
+        by: {
+          id: 'diodorus'
+        }
+      },
+      {
+        id: '21617836',
+        title: 'YouTube channel owners: Is your content directed to children?',
+        url: 'https://www.ftc.gov/news-events/blogs/business-blog/2019/11/youtube-channel-owners-your-content-directed-children',
+        score: 58,
+        descendants: 58,
+        time: 1574560008,
+        timeISO: '2019-11-24T01:46:48.000Z',
+        by: {
+          id: 'yskchu'
+        }
+      },
+      {
+        id: '21607818',
+        title: 'Towards a unified theory of reactive UI',
+        url: 'https://raphlinus.github.io/ui/druid/2019/11/22/reactive-ui.html',
+        score: 78,
+        descendants: 11,
+        time: 1574444123,
+        timeISO: '2019-11-22T17:35:23.000Z',
+        by: {
+          id: 'raphlinus'
+        }
+      },
+      {
+        id: '21603986',
+        title: 'The care and feeding of software engineers, or why engineers are grumpy (2012)',
+        url: 'https://humanwhocodes.com/blog/2012/06/12/the-care-and-feeding-of-software-engineers-or-why-engineers-are-grumpy/',
+        score: 222,
+        descendants: 103,
+        time: 1574413042,
+        timeISO: '2019-11-22T08:57:22.000Z',
+        by: {
+          id: '1900jwatson'
+        }
+      },
+      {
+        id: '21615978',
+        title: 'Diagram.codes',
+        url: 'https://diagram.codes',
+        score: 74,
+        descendants: 17,
+        time: 1574537587,
+        timeISO: '2019-11-23T19:33:07.000Z',
+        by: {
+          id: 'hugozap'
+        }
+      },
+      {
+        id: '21598127',
+        title: 'Exploiting prototype pollution',
+        url: 'https://research.securitum.com/prototype-pollution-rce-kibana-cve-2019-7609/',
+        score: 17,
+        descendants: 2,
+        time: 1574363368,
+        timeISO: '2019-11-21T19:09:28.000Z',
+        by: {
+          id: 'xtacy'
+        }
+      },
+      {
+        id: '21611677',
+        title: 'Save .org',
+        url: 'https://savedotorg.org/',
+        score: 1884,
+        descendants: 287,
+        time: 1574470964,
+        timeISO: '2019-11-23T01:02:44.000Z',
+        by: {
+          id: 'jaden'
+        }
+      },
+      {
+        id: '21616269',
+        title: 'Interfaces Generally Belong with Users',
+        url: 'http://neugierig.org/software/blog/2019/11/interface-pattern.html',
+        score: 69,
+        descendants: 23,
+        time: 1574540359,
+        timeISO: '2019-11-23T20:19:19.000Z',
+        by: {
+          id: 'kogir'
+        }
+      },
+      {
+        id: '21604825',
+        title: 'Cname cloaking, a disguise of third-party trackers',
+        url: 'https://medium.com/nextdns/cname-cloaking-the-dangerous-disguise-of-third-party-trackers-195205dc522a',
+        score: 210,
+        descendants: 143,
+        time: 1574424370,
+        timeISO: '2019-11-22T12:06:10.000Z',
+        by: {
+          id: 'nextdns'
+        }
+      },
+      {
+        id: '21604449',
+        title: 'Music is universal and used in strikingly similar ways across the globe: study',
+        url: 'https://www.newsweek.com/scientists-music-universal-globe-1473230',
+        score: 101,
+        descendants: 41,
+        time: 1574419277,
+        timeISO: '2019-11-22T10:41:17.000Z',
+        by: {
+          id: 'dr_dshiv'
+        }
+      },
+      {
+        id: '21615975',
+        title: 'Amazon Go Cashierless Supermarkets, Pop-Up Stores Coming Soon',
+        url: 'https://www.bloomberg.com/news/articles/2019-11-20/amazon-go-cashierless-supermarkets-pop-up-stores-coming-soon',
+        score: 52,
+        descendants: 111,
+        time: 1574537559,
+        timeISO: '2019-11-23T19:32:39.000Z',
+        by: {
+          id: 'joeyespo'
+        }
+      },
+      {
+        id: '21615393',
+        title: 'Symbolic Maths in Python (2017)',
+        url: 'https://alexandrugris.github.io/maths/2017/04/30/symbolic-maths-python.html',
+        score: 62,
+        descendants: 4,
+        time: 1574531641,
+        timeISO: '2019-11-23T17:54:01.000Z',
+        by: {
+          id: 'vyuh'
+        }
+      },
+      {
+        id: '21605037',
+        title: 'A Junkyard Billionaire',
+        url: 'https://www.bloomberg.com/news/articles/2019-11-19/junkyard-billionaire-thriving-on-car-wrecks-expands-his-empire',
+        score: 36,
+        descendants: 24,
+        time: 1574426690,
+        timeISO: '2019-11-22T12:44:50.000Z',
+        by: {
+          id: 'yarapavan'
+        }
+      },
+      {
+        id: '21614741',
+        title: '100k+ page views a month for $5 with a self-hosted static site',
+        url: 'https://runninginproduction.com/interviews/1-100k-page-views-a-month-for-5-dollars-with-a-self-hosted-static-site',
+        score: 78,
+        descendants: 31,
+        time: 1574524968,
+        timeISO: '2019-11-23T16:02:48.000Z',
+        by: {
+          id: 'nickjj'
+        }
+      },
+      {
+        id: '21618115',
+        title: 'The rape of men: a dark secret of war (2011)',
+        url: 'https://www.theguardian.com/society/2011/jul/17/the-rape-of-men',
+        score: 112,
+        descendants: 52,
+        time: 1574565255,
+        timeISO: '2019-11-24T03:14:15.000Z',
+        by: {
+          id: 'reedwolf'
+        }
+      },
+      {
+        id: '21593667',
+        title: 'Positional Drum Notation [pdf]',
+        url: 'http://stanford.edu/~mishel/CS448B/PositionalDrumNotation_Report.pdf',
+        score: 27,
+        descendants: 3,
+        time: 1574342002,
+        timeISO: '2019-11-21T13:13:22.000Z',
+        by: {
+          id: 'gield'
+        }
+      },
+      {
+        id: '21614533',
+        title: 'Numba: a JIT compiler for Python that works best on code that uses NumPy',
+        url: 'https://numba.pydata.org/numba-doc/dev/user/5minguide.html',
+        score: 73,
+        descendants: 9,
+        time: 1574522451,
+        timeISO: '2019-11-23T15:20:51.000Z',
+        by: {
+          id: 'reedwolf'
+        }
+      },
+      {
+        id: '21616463',
+        title: 'What I have learned from my suicidal patients',
+        url: 'https://www.theguardian.com/lifeandstyle/2019/nov/22/doctor-gp-what-i-have-learned-from-my-suicidal-patients',
+        score: 105,
+        descendants: 106,
+        time: 1574542377,
+        timeISO: '2019-11-23T20:52:57.000Z',
+        by: {
+          id: 'firstbase'
         }
       }
     ];
